@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<!-- Yay! Idag bygger vi en företagssite. Några saker som kan vara bra innan du börjar
+      är att veta två saker med det här dokumentet. 
+      
+      Du kommer att märka att vi använder en klass som heter container på alla sektioner 
+      på den här sidan. Den styr själva grundstrukturen, dvs hur 
+      bred varje sektion är, hur texten ska vara formaterad och sånt som är samma på alla 
+      sektioner. 
+      
+      En annan nyhet är att vi använder en bakgrundsbild till toppen på sidan, det är ett 
+      vanligt sätt när man vill ha text ovanpå en bild. Det som är lite annorlunda att denna 
+      läggs in i CSS dokumentet och inte i html filen, precis som om du hade gjort en bakgrundsfärg 
+      – så kika efter background-image så hittar du den där. 
+
+      Lycka till! -->
+
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css" type="text/css">
+<!--En font som vi denna gång hämtar från google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif+KR:400,700,900&display=swap" rel="stylesheet">
+  <title>My company webpage</title>
+</head>
+
+      <body>
+            
+            <!-- Här finns all html kod som har med toppen på sidan att göra, 
+            - kom ihåg att du hittar bilden i css dokumentet -->
+
+            <header>
+                  <div class="container">
+                        <h1>Welcome to My Vegan World!</h1>
+                         <p class="signup-text">Sign up below for my weekly inspirational posts.</p>
+                        <a href="#">Sign up now</a>
+                  </div>
+            </header>
+
+            <!-- Här finns all html kod som har med dom tre iconerna att göra -->
+
+            <section class="what-we-do">
+                  <div class="container">  
+                        
+                        <h2>Some of the things I offer</h2>
+
+                        <div class="icons">
+                              <div class="icon">
+                                    <img src="./images/icon1.svg">
+                                    <h3>Pumpkin Workshops</h3>
+                                    <p>We´ll bring all our pumpkins to the table and let me show you all
+                                           the cool yummy things you can do with a pumpkin.</p>
+                              </div>
+
+                              <div class="icon">
+                                    <img src="./images/icon2.svg">
+                                    <h3>Let´s go Nuts workshop</h3>
+                                    <p>Let´s find out what´s possible in the world of nuts, and we´ll finnish the workshop with a nutfilled dinner.</p>
+                              </div>
+
+                              <div class="icon">
+                                    <img src="./images/icon3.svg">
+                                    <h3>Beet-root nights</h3>
+                                    <p>We´ll have a look at the beet-roots health benefits and how they can help us to better health in our everyday lives.</p>
+                              </div>
+                        </div>
+                  </div>
+            </section>
+
+            <!-- Här finns all html kod som har med om oss sektionen att göra -->
+
+            <section class="about-us">
+                  <div class="container">
+                        <h2>How I found my passion for Vegan Food</h2>
+                        <p>I have always been drawned to veggies and greens, but for 5 years ago I got seriously ill. 
+                              I found my way back with a green and healthy lifestyle. And also, I love my animal friends and
+                              care about our planet. Check out my Blog posts and Pinterest for more detailed stories about me
+                              and how I found this path.
+                        </p>
+                        <a href="#">Read more here</a>
+                  </div>
+            </section>
+
+            <!-- Här kan du lägga till kod om du vill fylla i något i footern -->
+
+            <footer>
+                  <div class="container">
+                        <h4>Check out my <a href="http://www.pinterest.com" target="_blank">Pinterest</a> for more inspiration!</h4>
+                        <h4>Contact med at: <a href="http://www.gmail.com" target="_blank"><strong>example@gmail.com</strong></a></h4>
+                  </div>
+            </footer>
+
+      </body>
+
+</html>
