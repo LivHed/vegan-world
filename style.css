@@ -1,11 +1,4 @@
-/* 
-I det här dokumentet hittar du all styling för det här projektet, 
-Det är en hel del css som du inte har lärt dig ännu. Bland annat använder vi något 
-som heter flexbox eller display: flex för att skapa själva layouten, det behöver 
-du inte bry dig om idag – det tar vi i morgon. 
-*/
-
-/* Här är styling som gäller för hela sidan */
+/* Styling for the whole page */
 
 body {
     font-family: 'Noto Serif KR', serif;
@@ -13,10 +6,8 @@ body {
     text-align: center;
 }
 
-/* Container klassen är en klass som vi återanvänder mycket i vår html, 
-den gör att varje sektion blir 80% av sidan och att det blir samma padding över 
-hela sidan. Den styr med andra ord väldigt mycket av grund layouten. 
-Den behöver du inte ändra i så mycket om du inte vill ändra den övergripande strukturen */
+/* The container class that makes every section to take up 80% of the page,
+and with the same padding all over the page. */
 
 .container {
     width: 80%;
@@ -24,7 +15,7 @@ Den behöver du inte ändra i så mycket om du inte vill ändra den övergripand
     padding: 100px 0;
 }
 
-/* Här är styling som gäller för rubriker och text */
+/* Styling for headings and text */
 
 h1 {
     color: white;
@@ -53,22 +44,21 @@ p {
     font-weight: bold;
 }
 
-/* Här är styling som gäller för toppen på sidan */
+/* Styling for the top section of the page */
 
 header {
-    /* En ny grej är att vi nu lägger in bilden i CSS som en bakgrund, här redigerar du den. */
     background-image: url("./images/background-img-unsplash.jpg");
-    background-repeat: no-repeat; /* Styr bilden */
-    background-size: cover; /* Styr bilden */
+    background-repeat: no-repeat; /* Controls the image */
+    background-size: cover; /* Controls the image */
     padding: 100px 0;
 }
 
-/* Styling för knappen */
+/* Styling for the button */
 
 header a {
     color: white;
     border: white solid;
-    border-radius: 40px; /* Gör att knappen får runda hörn */
+    border-radius: 40px; /* Makes the buttons corners round. */
     font-weight: 600;
     text-transform: uppercase;
     text-decoration: none;
@@ -76,10 +66,10 @@ header a {
     display: inline-block;
 }
 
-/* Styling för iconerna */
+/* Styling for the icons */
 
 .icons {
-    display: flex; /* Gör att dom lägger sig brevid varandra – men mer om detta i morgon. */
+    display: flex; /* makes the icons display next to eachother */
     justify-content: center;
     align-items: top;
 }
@@ -92,12 +82,12 @@ header a {
     width: 150px;
 }
 
-/* Styling för about-us sektionen */
+/* Styling for the about-us section */
 
 .about-us {
     background-image: url("./images/background-about.jpg");
-    background-repeat: no-repeat; /* Styr bilden */
-    background-size: cover; /* Styr bilden */
+    background-repeat: no-repeat; /* controls the image */
+    background-size: cover; /* controls the image */
     padding: 100px 0;
     color: white;
 }
@@ -114,7 +104,7 @@ header a {
     color: white;
 }
 
-/* Styling för footern på sidan */
+/* Styling for the footer */
 
 footer {
     background-color: #4d4d4d;
